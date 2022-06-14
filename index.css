@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(latar2.png) no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 180px;
+  height: 180px;
+  margin: 200px auto;
+  position: relative;
+  padding: 40px;
+}
+.matahari {
+  width: 180px;
+  height: 180px;
+  background: url(matahari.png) no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  /* animation: rotate 2s linear infinite; */
+}
+.bumi {
+  width: 40px;
+  height: 30px;
+  background: url(bumi.png) no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 20px 20px 10px 2px #000000cc;
+  animation: rev 5.65s infinite;
+}
+
+@keyframes rev {
+  50% {
+    left: calc(100% - 40px);
+    top: calc(100% - 40px);
+  }
+  100% {
+    z-index: -1;
+  }
+}
+
+.mars {
+  width: 50px;
+  height: 40px;
+  background: url(mars.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-right: 150px;
+  animation: mars 4s infinite;
+  box-shadow: 20px 20px 10px 2px #000000cc;
+}
+.venus {
+  width: 50px;
+  height: 40px;
+  background: url(planets/venus.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-right: 150px;
+  animation: mars 5s infinite;
+  box-shadow: 20px 20px 10px 2px #000000cc;
+}
+.merkurius {
+  width: 50px;
+  height: 40px;
+  background: url(planets/merkurius.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-right: 150px;
+  animation: mars 6s infinite;
+  box-shadow: 20px 20px 10px 2px #000000cc;
+}
+.saturnus {
+  width: 65px;
+  height: 55px;
+  background: url(planets/saturnus.png);
+  background-size: cover;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-right: 150px;
+  animation: mars 7s infinite;
+}
+.uranus {
+  width: 50px;
+  height: 40px;
+  background: url(planets/uranus.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-right: 150px;
+  animation: mars 8s infinite;
+  box-shadow: 20px 20px 10px 2px #000000cc;
+}
+
+@keyframes mars {
+  50% {
+    left: calc(100% - 40px);
+    top: calc(100% - 40px);
+  }
+  100% {
+    z-index: -1;
+  }
+}
+
+.latar {
+  background: url(galaxy.jpg) no-repeat;
+  background-size: cover;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+span {
+  border-top: 2px solid white;
+}
